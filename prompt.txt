@@ -1,0 +1,17 @@
+Extract pricing and fees from this MSA contract.
+
+Return ONLY CSV format.
+
+Columns must be EXACTLY:
+
+Client,Tier,Volume,OnRamp,OffRamp,Inbound Fee,FX Fee,KYB,KYC,Monthly Biz,Monthly Consumer,ACH Standard,ACH Same Day,FedNow,Wire Domestic,Wire International
+
+Rules:
+- One row per Tier (Tier I, II, III)
+- Extract only real values (no guessing)
+- Percentages like 0.08%
+- Money like $15
+- If missing leave empty
+- If waived → use $0
+
+Contract
